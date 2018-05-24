@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Placementez</string>
+    <string name="text_button_login">Ingresar</string>
+    <string name="dont_have_account">¿No tienes cuenta?,</string>
+    <string name="create_here">crea una aquí</string>
+    <string name="hint_username_login">Nombre de usuario</string>
+    <string name="hint_password_login">Contraseña</string>
+    <string name="facebook_app_id">387883138377441</string>
+    <string name="fb_login_protocol_scheme">fb387883138377441</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_name_create_account">Nombre Completo</string>
+    <string name="hint_username_create_account">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_password_confirm">Confirmar Contraseña</string>
+    <string name="hint_button_create_account">Únete</string>
+    <string name="create_account_title_toolbar">Crear Cuenta</string>
+    <string name="create_account_succes">Cuenta creada exitosamente</string>
+    <string name="create_account_fail">Ocurrió un error al crear la cuenta</string>
+    <string name="login_succes">Login Exitoso</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_horizontal_login">16dp</dimen>
+    <dimen name="edittext_textsize">20sp</dimen>
+    <dimen name="margin_create_here">8dp</dimen>
+    <dimen name="edittext_textsize2">25sp</dimen>
+    <dimen name="padding_bottom_button_facebook">10dp</dimen>
+    <dimen name="padding_top_button_facebook">10dp</dimen>
+    <dimen name="activity_createaccount_padding">16dp</dimen>
+    <dimen name="edittext_margin_create_account">16dp</dimen>
+    <dimen name="margin_to_login_buttons">5dp</dimen>
+</resources>

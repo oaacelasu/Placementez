@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "125081129880",
+    "firebase_url": "https://placementez-c09fc.firebaseio.com",
+    "project_id": "placementez-c09fc",
+    "storage_bucket": "placementez-c09fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125081129880:android:25ac1e53c8df73e5",
+        "android_client_info": {
+          "package_name": "com.oaacelasu.placementez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125081129880-i89lis3c1cskidvau4s54sk1c8gc8s4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oaacelasu.placementez",
+            "certificate_hash": "44a8be4e82873237627d27d9839c511b0b9f8066"
+          }
+        },
+        {
+          "client_id": "125081129880-mscjhcq3plo37uj4tu0kmp3dn8gaohu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRnlsYebzdgmuRH4BFbH7i1W6k-7Qdrew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125081129880-mscjhcq3plo37uj4tu0kmp3dn8gaohu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
