@@ -15,8 +15,5 @@ public class PlacementezApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-
-
-
     }
 }

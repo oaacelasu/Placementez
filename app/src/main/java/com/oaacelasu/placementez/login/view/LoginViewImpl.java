@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.facebook.login.widget.LoginButton;
-import com.oaacelasu.placementez.ContainerActivity;
+import com.oaacelasu.placementez.home.view.ContainerActivity;
 import com.oaacelasu.placementez.R;
 import com.oaacelasu.placementez.login.presenter.LoginPresenter;
 import com.oaacelasu.placementez.login.presenter.LoginPresenterImpl;

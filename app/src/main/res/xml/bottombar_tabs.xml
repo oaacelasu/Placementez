@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_search"
+        icon="@drawable/ic_search"
+        title="@string/tab_search"
+        barcolorWhenSelected="@android:color/white"
+        />
+
+
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="@string/tab_home"
+        barcolorWhenSelected="@android:color/white"
+        />
+
+    <tab
+        id="@+id/tab_map"
+        icon="@drawable/ic_map"
+        title="@string/tab_map"
+        barcolorWhenSelected="@android:color/white"
+        />
+</tabs>
