@@ -98,7 +98,7 @@ public class LoginViewImpl extends AppCompatActivity implements LoginView{
 
     @Override
     public void goToGithub() {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/oaacelasu"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/oaacelasu/Placementez"));
         startActivity(intent);
     }
 
