@@ -21,9 +21,9 @@
     <application
         android:name=".PlacementezApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_placementez"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_placementez_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <provider
@@ -78,14 +78,14 @@
                 android:value=".login.view.LoginViewImpl" />
         </activity>
         <activity
-            android:name=".home.view.ContainerActivity"
+            android:name=".home.view.ContainerActivityViewImpl"
             android:configChanges="orientation" />
-        <activity android:name=".share.view.PlaceDetailActivity"
-            android:parentActivityName=".home.view.ContainerActivity">
+        <activity android:name=".share.view.PlaceDetailViewImpl"
+            android:parentActivityName=".home.view.ContainerActivityViewImpl">
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.view.ContainerActivity" />
+                android:value=".home.view.ContainerActivityViewImpl" />
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"

@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.facebook.login.widget.LoginButton;
-import com.oaacelasu.placementez.home.view.ContainerActivity;
+import com.oaacelasu.placementez.home.view.ContainerActivityViewImpl;
 import com.oaacelasu.placementez.R;
 import com.oaacelasu.placementez.login.presenter.LoginPresenter;
 import com.oaacelasu.placementez.login.presenter.LoginPresenterImpl;
@@ -91,7 +91,7 @@ public class LoginViewImpl extends AppCompatActivity implements LoginView{
 
     @Override
     public void goToContainerActivity() {
-        Intent intent = new Intent(this, ContainerActivity.class);
+        Intent intent = new Intent(this, ContainerActivityViewImpl.class);
         startActivity(intent);
         Toast.makeText(LoginViewImpl.this, getResources().getString(R.string.login_succes), Toast.LENGTH_SHORT).show();
     }

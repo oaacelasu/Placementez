@@ -4,7 +4,7 @@ package com.oaacelasu.placementez.model;
  * name : Location
  * author : root
  * date : 26/05/18
- * description :
+ * description : Tomado de: https://www.codeproject.com/Articles/1121069/Google-Maps-Nearby-Places-API-using-Retrofit-Andro
  */
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

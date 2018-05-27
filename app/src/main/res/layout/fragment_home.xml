@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@color/colorPrimaryDark"
-    tools:context=".share.view.SearchFragment">
+    tools:context=".home.view.SearchFragment">
 
 
     <LinearLayout
@@ -15,6 +15,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loading_margin"
+            android:background="@drawable/placementez_logo_2"
+            android:layout_gravity="center_horizontal"
+
+            />
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -24,24 +33,14 @@
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/textsize_loading"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/height_cardview"
+            android:layout_marginTop="@dimen/margin_in_loading"
             />
 
         <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/loading_margin"
-            />
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/loading_margin"
-            android:background="@drawable/placementez_logo"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="@dimen/activity_vertical_marginloading"
             />
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

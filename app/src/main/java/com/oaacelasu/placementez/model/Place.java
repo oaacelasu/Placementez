@@ -1,10 +1,5 @@
 package com.oaacelasu.placementez.model;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-
-import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -16,9 +11,9 @@ import java.util.ArrayList;
  */
 public class Place implements Serializable{
     private String picture = "";
-    private String placeName = "";
-    private String adress = "";
-    private ArrayList<Product> products;
+    private String placeName ;
+    private String adress ;
+    private ArrayList<Product> products ;
 
     public Place(String picture, String placeName, String adress) {
         this.picture = picture;

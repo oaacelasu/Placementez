@@ -2,14 +2,14 @@
 <tabs>
     <tab
         id="@+id/tab_search"
-        icon="@drawable/ic_search"
+        icon="@drawable/ic_proxi"
         title="@string/tab_search"
         barcolorWhenSelected="@android:color/white"
         />
 
     <tab
         id="@+id/tab_map"
-        icon="@drawable/ic_map"
+        icon="@drawable/ic_map_default"
         title="@string/tab_map"
         barcolorWhenSelected="@android:color/white"
         />

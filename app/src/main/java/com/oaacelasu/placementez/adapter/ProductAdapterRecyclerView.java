@@ -3,21 +3,14 @@ package com.oaacelasu.placementez.adapter;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.oaacelasu.placementez.R;
-import com.oaacelasu.placementez.home.view.ContainerActivity;
 import com.oaacelasu.placementez.model.Product;
 import com.squareup.picasso.Picasso;
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Build;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -69,9 +62,9 @@ public class ProductAdapterRecyclerView extends RecyclerView.Adapter<ProductAdap
         public ProductViewHolder(View itemView) {
             super(itemView);
 
-            ProductImageCard = (ImageView) itemView.findViewById(R.id.ivProductImageCard);
-            ProductNameCard = (TextView) itemView.findViewById(R.id.edtProductNameCard);
-            ProductPriceCard = (TextView) itemView.findViewById(R.id.edtProductPriceCard);
+            ProductImageCard = itemView.findViewById(R.id.ivProductImageCard);
+            ProductNameCard = itemView.findViewById(R.id.edtProductNameCard);
+            ProductPriceCard = itemView.findViewById(R.id.edtProductPriceCard);
 
 
 

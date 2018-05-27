@@ -17,15 +17,12 @@
     <string name="create_account_fail">Une erreur s\'est produite lors de la création du compte</string>
     <string name="login_succes">Successful Login</string>
     <string name="tab_map">Map</string>
-    <string name="tab_home">Accueil</string>
-    <string name="tab_search">Chercher</string>
+    <string name="tab_search">À proximité</string>
     <string name="placename_card">Parque de la plage</string>
-    <string name="searchhinttext">Chercher</string>
     <string name="placenamedetail_card">Parque de la plage</string>
     <string name="placeaddresdetail_card">Av libertadores # 60 - 45</string>
     <string name="productname_card">Pepsi</string>
     <string name="productprice_card">30 pesos</string>
-    <string name="title_activity_maps">Map</string>
     <string name="loading_text">Chargement</string>
     <string name="text_titile_search_fragment">Lieux à proximité</string>
     <string name="creator_info">Réalisé pour Oscar Antonio Acelas Upegui</string>

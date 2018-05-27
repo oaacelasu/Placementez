@@ -16,15 +16,12 @@
     <string name="create_account_fail">There was an error creating the account</string>
     <string name="login_succes">Successful Login</string>
     <string name="tab_map">Map</string>
-    <string name="tab_home">Home</string>
-    <string name="tab_search">Search</string>
+    <string name="tab_search">Nearby</string>
     <string name="placename_card">Park in the beach</string>
-    <string name="searchhinttext">Search</string>
     <string name="placenamedetail_card">Park in the beach</string>
     <string name="placeaddresdetail_card">Av libertadores # 60 - 45</string>
     <string name="productname_card">Pepsi</string>
     <string name="productprice_card">30 pesos</string>
-    <string name="title_activity_maps">Map</string>
     <string name="loading_text">Loading</string>
     <string name="text_titile_search_fragment">Nearby places</string>
     <string name="creator_info">Realiced by Oscar Antonio Acelas Upegui</string>

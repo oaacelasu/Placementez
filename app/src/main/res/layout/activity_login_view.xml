@@ -132,6 +132,7 @@
                     android:textColor="@color/colorNoAccent"
                     android:gravity="bottom|center_horizontal"
                     android:layout_marginLeft="@dimen/margin_create_here"
+                    android:onClick="goToGithub"
 
                     />
                 <TextView
@@ -141,7 +142,7 @@
                     android:textColor="@color/colorNoAccent"
                     android:gravity="bottom|center_horizontal"
                     android:layout_marginLeft="@dimen/margin_create_here"
-
+                    android:onClick="goToGithub"
                     />
 
 

@@ -10,15 +10,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.oaacelasu.placementez.R;
-import com.oaacelasu.placementez.home.view.ContainerActivity;
 import com.oaacelasu.placementez.model.Place;
-import com.oaacelasu.placementez.share.view.PlaceDetailActivity;
+import com.oaacelasu.placementez.share.view.PlaceDetailViewImpl;
 import com.squareup.picasso.Picasso;
-import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -61,7 +59,7 @@ public class PlaceAdapterRecyclerView extends RecyclerView.Adapter<PlaceAdapterR
             @Override
             public void onClick(View v) {
                 if(place.getPicture() != null){
-                    Intent intent = new Intent(activity, PlaceDetailActivity.class);
+                    Intent intent = new Intent(activity, PlaceDetailViewImpl.class);
                     intent.putExtra("EXTRA_PLACE_ID", place);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
                         Explode explode = new Explode();
@@ -71,7 +69,7 @@ public class PlaceAdapterRecyclerView extends RecyclerView.Adapter<PlaceAdapterR
                         activity.startActivity(intent);
                     }
                 }else{
-                    Intent intent = new Intent(activity, PlaceDetailActivity.class);
+                    Intent intent = new Intent(activity, PlaceDetailViewImpl.class);
                     intent.putExtra("EXTRA_PLACE_ID", place);
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
                         Explode explode = new Explode();
@@ -101,8 +99,8 @@ public class PlaceAdapterRecyclerView extends RecyclerView.Adapter<PlaceAdapterR
         public PlaceViewHolder(View itemView) {
             super(itemView);
 
-            placeImageCard = (ImageView) itemView.findViewById(R.id.ivPlaceImageCard);
-            placeNameCard = (TextView) itemView.findViewById(R.id.edtPlaceNameCard);
+            placeImageCard = itemView.findViewById(R.id.ivPlaceImageCard);
+            placeNameCard = itemView.findViewById(R.id.edtPlaceNameCard);
 
         }
     }
