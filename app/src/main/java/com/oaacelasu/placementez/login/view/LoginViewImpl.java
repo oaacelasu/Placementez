@@ -41,9 +41,15 @@ public class LoginViewImpl extends AppCompatActivity implements LoginView{
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                signIn();
+                if (edtUsernameLogin.getText().toString().length()>0 && edtPasswordLogin.getText().toString().length() >0 ) {
+                    signIn();
+                }
+                else {
+                    Toast.makeText(LoginViewImpl.this, getResources().getString(R.id.loginErrorMessage), Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
     }
 
     @Override

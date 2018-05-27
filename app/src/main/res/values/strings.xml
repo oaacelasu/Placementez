@@ -26,5 +26,11 @@
     <string name="transitionname_place">transitionname_place</string>
     <string name="placename_card">Parque de la playa</string>
     <string name="searchhinttext">Buscar</string>
+    <string name="placenamedetail_card">Parque en la playa</string>
+    <string name="placeaddresdetail_card">Av libertadores # 60 - 45</string>
+    <string name="productname_card">Pepsi</string>
+    <string name="productprice_card">30 pesos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="loading_text">Cargando</string>
 
 </resources>

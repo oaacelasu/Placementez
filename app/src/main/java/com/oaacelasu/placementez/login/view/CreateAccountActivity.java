@@ -1,5 +1,6 @@
 package com.oaacelasu.placementez.login.view;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -34,14 +35,22 @@ public class CreateAccountActivity extends AppCompatActivity implements CreateAc
 
         btnJoinUs.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("ResourceType")
             @Override
             public void onClick(View v) {
-                        createAccount();
+                if (edtEmail.getText().toString().length()>0 && edtPassword.getText().toString().length() >0 ) {
+                    createAccount();
+                }
+                else {
+                    Toast.makeText(CreateAccountActivity.this, getResources().getString(R.id.loginErrorMessage), Toast.LENGTH_SHORT).show();
+                }
                     }
                 });
             }
 
     public void createAccount() {
+
+
         String email = edtEmail.getText().toString();
         String password = edtPassword.getText().toString();
         presenter.createAccount(this, email, password);

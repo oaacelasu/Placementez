@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.oaacelasu.placementez.R;
 import com.oaacelasu.placementez.home.view.ContainerActivity;
 import com.oaacelasu.placementez.model.Place;
+import com.oaacelasu.placementez.share.view.PlaceDetailActivity;
 import com.squareup.picasso.Picasso;
 import android.app.Activity;
 import android.content.Intent;
@@ -49,24 +50,42 @@ public class PlaceAdapterRecyclerView extends RecyclerView.Adapter<PlaceAdapterR
 
     @Override
     public void onBindViewHolder(@NonNull PlaceViewHolder holder, int position) {
-        Place place = places.get(position);
+        final Place place = places.get(position);
         holder.placeNameCard.setText(place.getPlaceName());
-        Picasso.get().load(place.getPicture()).into(holder.placeImageCard);
+        if (place.getPicture() != null){
+            Picasso.get().load(place.getPicture()).into(holder.placeImageCard);
+        }
+
 
         holder.placeImageCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity, ContainerActivity.class);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-                    Explode explode = new Explode();
-                    activity.getWindow().setExitTransition(explode);
-                    activity.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(activity, v, activity.getString(R.string.transitionname_place)).toBundle());
+                if(place.getPicture() != null){
+                    Intent intent = new Intent(activity, PlaceDetailActivity.class);
+                    intent.putExtra("EXTRA_PLACE_ID", place);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                        Explode explode = new Explode();
+                        activity.getWindow().setExitTransition(explode);
+                        activity.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(activity, v, activity.getString(R.string.transitionname_place)).toBundle());
+                    }else{
+                        activity.startActivity(intent);
+                    }
                 }else{
-                    activity.startActivity(intent);
+                    Intent intent = new Intent(activity, PlaceDetailActivity.class);
+                    intent.putExtra("EXTRA_PLACE_ID", place);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                        Explode explode = new Explode();
+                        activity.getWindow().setExitTransition(explode);
+                        activity.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(activity, v, activity.getString(R.string.transitionname_place)).toBundle());
+                    }else{
+                        activity.startActivity(intent);
+                    }
                 }
             }
         });
     }
+
+
 
     @Override
     public int getItemCount() {
@@ -84,8 +103,6 @@ public class PlaceAdapterRecyclerView extends RecyclerView.Adapter<PlaceAdapterR
 
             placeImageCard = (ImageView) itemView.findViewById(R.id.ivPlaceImageCard);
             placeNameCard = (TextView) itemView.findViewById(R.id.edtPlaceNameCard);
-
-
 
         }
     }

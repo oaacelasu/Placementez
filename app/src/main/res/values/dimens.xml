@@ -13,4 +13,21 @@
     <dimen name="cornerradius_cardview">4dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="textsize_placename_card">20sp</dimen>
+    <dimen name="appbarlayout_height">256dp</dimen>
+    <dimen name="textsize_usernamedetail">25sp</dimen>
+    <dimen name="textsize_placeadressdetail">15sp</dimen>
+    <dimen name="textsize_placenamedetail">25sp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="height_productimage_cardview">100dp</dimen>
+    <dimen name="margin_productname_toproduct_image">5dp</dimen>
+    <dimen name="textsize_productname_card">15sp</dimen>
+    <dimen name="margin_productprice_toproduct_name">5dp</dimen>
+    <dimen name="margin_productname">120dp</dimen>
+    <dimen name="margin_productprice">50dp</dimen>
+    <dimen name="textsize_productplace_card">15sp</dimen>
+    <dimen name="margin_items_productcard">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="textsize_loading">50sp</dimen>
+    <dimen name="activity_vertical_marginloading">30dp</dimen>
+    <dimen name="loading_margin">50dp</dimen>
 </resources>

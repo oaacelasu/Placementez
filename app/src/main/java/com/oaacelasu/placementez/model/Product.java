@@ -1,5 +1,6 @@
 package com.oaacelasu.placementez.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -8,7 +9,7 @@ import java.util.ArrayList;
  * date : 24/05/18
  * description :
  */
-public class Product {
+public class Product implements Serializable {
     private String picture;
     private String productName;
     private String price;
