@@ -24,7 +24,7 @@
                 android:id="@+id/ivLoginLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/placementez_logo_dark"
+                android:background="@drawable/logo_placementez_big"
                 android:layout_centerInParent="true"
                 android:onClick="goToGithub"
                 />
@@ -101,14 +101,12 @@
                         android:layout_height="wrap_content"
                         android:text="@string/dont_have_account"
                         android:textColor="@color/colorNoAccent"
-                        android:textSize="@dimen/edittext_textsize"
-                        android:textStyle="bold"
-                        />
+                        android:textSize="@dimen/edittext_textsize" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/create_here"
-                        android:textColor="@color/colorNoAccent"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="@dimen/edittext_textsize"
                         android:textStyle="bold"
                         android:layout_toRightOf="@id/tvDontHaveAccount"
@@ -125,6 +123,30 @@
                     android:layout_height="wrap_content"
 
                     />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creator_info"
+                    android:textColor="@color/colorNoAccent"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_marginLeft="@dimen/margin_create_here"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creator_info_mail"
+                    android:textColor="@color/colorNoAccent"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_marginLeft="@dimen/margin_create_here"
+
+                    />
+
+
+
+
 
             </LinearLayout>
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loginErrorMessage" type="id">Error en los campos, intente de nuevo!</item>
+</resources>

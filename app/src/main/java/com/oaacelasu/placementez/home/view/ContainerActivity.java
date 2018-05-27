@@ -139,9 +139,11 @@ public class ContainerActivity extends AppCompatActivity implements GoogleApiCli
 
 
         bottomBar = findViewById(R.id.bottomBar);
-        bottomBar.setDefaultTab(R.id.tab_home);
-        bottomBar.setEnabled(false);
+        bottomBar.setDefaultTab(R.id.tab_map);
         homeFragment = new HomeFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contentContainer, homeFragment)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .addToBackStack(null).commit();
         searchFragment = new SearchFragment();
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
@@ -149,11 +151,6 @@ public class ContainerActivity extends AppCompatActivity implements GoogleApiCli
                 switch (tabId) {
                     case R.id.tab_search:
                         goToSearchFragment();
-                        break;
-                    case R.id.tab_home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contentContainer, homeFragment)
-                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                                .addToBackStack(null).commit();
                         break;
                     case R.id.tab_map:
                         displayPlacePicker();
@@ -547,19 +544,25 @@ public class ContainerActivity extends AppCompatActivity implements GoogleApiCli
             latitude = location.getLatitude();
             longitude = location.getLongitude();
             build_retrofit_and_get_response("restaurant");
-            bottomBar.setDefaultTab(R.id.tab_search);
             bottomBar.setDefaultTab(R.id.tab_map);
         }
 
     }
 
     private void goToSearchFragment() {
-        Log.d("Gato", String.valueOf(places.size()));
-        Bundle bundle = new Bundle();
-        bundle.putSerializable("PLACES_KEY", places);
-        searchFragment.setArguments(bundle);
-        getSupportFragmentManager().beginTransaction().replace(R.id.contentContainer, searchFragment)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                .addToBackStack(null).commit();
+        if (places.size()>0){
+            Log.d("Gato", String.valueOf(places.size()));
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("PLACES_KEY", places);
+            searchFragment.setArguments(bundle);
+            getSupportFragmentManager().beginTransaction().replace(R.id.contentContainer, searchFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        }else{
+            getSupportFragmentManager().beginTransaction().replace(R.id.contentContainer, homeFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        }
+
     }
 }

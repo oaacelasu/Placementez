@@ -7,14 +7,6 @@
         barcolorWhenSelected="@android:color/white"
         />
 
-
-    <tab
-        id="@+id/tab_home"
-        icon="@drawable/ic_home"
-        title="@string/tab_home"
-        barcolorWhenSelected="@android:color/white"
-        />
-
     <tab
         id="@+id/tab_map"
         icon="@drawable/ic_map"

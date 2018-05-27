@@ -30,4 +30,6 @@
     <dimen name="textsize_loading">50sp</dimen>
     <dimen name="activity_vertical_marginloading">30dp</dimen>
     <dimen name="loading_margin">50dp</dimen>
+    <dimen name="textsize_tittle_search">30sp</dimen>
+    <dimen name="edittext_textsize_creator_info">16sp</dimen>
 </resources>
