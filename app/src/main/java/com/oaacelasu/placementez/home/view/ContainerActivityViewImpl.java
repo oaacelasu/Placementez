@@ -140,8 +140,6 @@ public class ContainerActivityViewImpl extends AppCompatActivity implements Goog
                 .addApi(LocationServices.API)
                 .addApi(Places.GEO_DATA_API)
                 .addApi(Places.PLACE_DETECTION_API)
-                .addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
                 .build();
         mGoogleApiClient.connect();
     }

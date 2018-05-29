@@ -100,7 +100,6 @@ public class LoginRepositoryImpl implements LoginRepository {
                 error.printStackTrace();
             }
         });
-
     }
 
     private void signInFacebookFirebase(AccessToken accessToken, Activity activity) {
